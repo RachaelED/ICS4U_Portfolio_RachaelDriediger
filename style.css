@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: rgb(255, 255, 255);
+  /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiipfAOJcoB59nSYxLyG6-PKoWqknsbZ2OXw&usqp=CAU");*/
 }
 canvas {
   display: block;
