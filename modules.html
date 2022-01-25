@@ -55,20 +55,94 @@
       #subtitle{
         font-size: 20px;
       }
+      
+      .Navbar{
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .Navbar a{
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+/*       style the umbrella section to choose the module */
+      .Dropdown{
+        float: left;
+        overflow: hidden;
+
+      }
+/*    style the button */
+      .Dropdown .Button{
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .Navbar a:hover, .Dropdown:hover .Button {
+        background-color: red;
+      }      
+      
+/*       style the dropdown options */
+      .ModSelect{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .ModSelect a{
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .ModeSelect a:hover {
+        background-color: green;
+      }
+      
+      .Dropdown:hover .ModSelect {
+        display: block;
+      }
+      
     </style>
     
     <title>Modules</title>
 
   </head>
   <body>
+  
     
     <h1>Modules</h1>
-    <h3>On this page:</h3>
     
-    <li><a href="#KhanAcademy">Khan Academy</a></li>
-    <li><a href="#CodingChallenge">Coding Challenge</a></li>
-    <li><a href="#GitHub">GitHub</a></li>
-    <li><a href="#CodingSession">CodingSession</a></li>
+    <!--     Dropdown menu to choose module -->
+    <div class="Navbar">
+      <a href="index.html">Home</a>
+      <div class="Dropdown">
+        <button class="Button">Modules</button>
+        <div class="ModSelect">
+          <a href="#KhanAcademy">Khan Academy</a>
+          <a href="#CodingChallenge">Coding Challenge</a>
+          <a href="#GitHub">GitHub Courses</a>
+          <a href="#CodingSession">Coding Session</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Social Media/Contact</a>
+    </div>
+    
     
     <div id="KhanAcademy">
     <h2>Khan Academy Modules</h2>
