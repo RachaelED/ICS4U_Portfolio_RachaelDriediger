@@ -1,6 +1,10 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-image: url("img_background.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 canvas {
   display: block;
