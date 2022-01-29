@@ -3,7 +3,7 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<!--     <link rel="stylesheet" type="text/css" href="style.css"> -->
     <meta charset="utf-8" />
     
     <style>
@@ -22,37 +22,55 @@
         text-align: center;
         color: rgb(255, 255, 255);
       }
+      h3{
+        font-family: cursive;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+      }
       p{
         text-align: center;
       }
-      #Links{
-        text-align: left;
-      }
-      #TopHeader{
-        background-color: rgb(174, 100, 210);
-        background-repeat: no-repeat;
-        background-size: auto;
-      }
+
       
       
       
       .Navbar{
         overflow: hidden;
-        background-color: #333;
+        background-color: #F0F0F0;
       }
       
       .Navbar a{
         float: left;
         font-size: 16px;
-        color: white;
+        color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+        
       }
 
       .Navbar a:hover {
-        background-color: red;
-      }      
+        background-color: #E0E0E0;
+      }  
+      
+      #Content{
+        background-color: #E0E0E0;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      
+      body{
+        margin: 0;
+        padding: 0;
+        background-image: url("img_background.jpeg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
       
       
     </style>
@@ -61,25 +79,25 @@
 
   </head>
   <body>
-    
-    <div id="TopHeader">
-      <h1><br>ICS4U Portfolio</h1>
-      <h2>Rachael Driediger<br><br></h2>
-    </div>
-    
-    
-        <!--     Navigation bar -->
-    <div class="Navbar">
-      <a href="index.html">Home</a>
-      <a href="modules.html">Modules</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Social Media/Contact</a>
-    </div>
-    
-    
-    
-    <p>Welcome to my portfolio! Here, I will share about my journey through ICS4U and all of the intersting and valuable things that I learned.</p>
 
+        <h1><br>ICS4U Portfolio</h1>
+        <h2>Rachael Driediger<br><br></h2>
+
+    
+     <div id="Content">
+          <!--     Navigation bar -->
+      <div class="Navbar">
+        <a href="index.html">Home</a>
+        <a href="modules.html">Modules</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Social Media/Contact</a>
+      </div>
+    
+   
+       <h3>Welcome to my portfolio!</h3>
+      <p>Over the past few months, I have been working hard to learn many new computer science concepts and further perfect some of my prior knowledge. Throughout the semester, I have learned SO much that I will be sharing here on my portfolio. Please check out these pages to find out more about the interesting and valuable things I learned throughout my ICS4U coding journey.</p>
+
+    </div>
     
   </body>
 </html>
