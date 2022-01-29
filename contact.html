@@ -3,7 +3,7 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<!--     <link rel="stylesheet" type="text/css" href="style.css"> -->
     <meta charset="utf-8" />
     
     <style>
@@ -25,21 +25,39 @@
       
       .Navbar{
         overflow: hidden;
-        background-color: #333;
+        background-color: #F0F0F0;
       }
       
       .Navbar a{
         float: left;
         font-size: 16px;
-        color: white;
+        color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
       }
 
       .Navbar a:hover {
-        background-color: red;
+        background-color: #E0E0E0;
       }      
+      
+      #Content{
+        background-color: #E0E0E0;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      
+      body{
+        margin: 0;
+        padding: 0;
+        background-image: url("img_background.jpeg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
       
 
     </style>
@@ -52,23 +70,26 @@
     <h1>Contact</h1>
     <h2>Rachael Driediger</h2>
     
-       <!--     Navigation bar -->
-    <div class="Navbar">
-      <a href="index.html">Home</a>
-      <a href="modules.html">Modules</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Social Media/Contact</a>
+    <div id="Content">
+         <!--     Navigation bar -->
+      <div class="Navbar">
+        <a href="index.html">Home</a>
+        <a href="modules.html">Modules</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Social Media/Contact</a>
+      </div>
+
+
+      <h2>For updates on my coding journey, please check out my social media pages</h2>
+      <li><a href="https://github.com/RachaelED">GitHub:</a> username @RachaelED</li>
+      <li><a href="https://www.instagram.com/the.snakegame2/">Instagram</a></li>
+      <li><a href="https://www.khanacademy.org/profile/me/">Khan Academy</a></li>
+
+      <h4>Rachael Driediger</h4>
+      <h4>Email: rdrie1@ocdsb.ca</h4>
+      <h4>School: A.Y. Jackson S.S.</h4>
+    
     </div>
-    
-    
-    <h2>For updates on my coding journey, please check out my social media pages</h2>
-    <li><a href="https://github.com/RachaelED">GitHub:</a> username @RachaelED</li>
-    <li><a href="https://www.instagram.com/the.snakegame2/">Instagram</a></li>
-    <li><a href="https://www.khanacademy.org/profile/me/">Khan Academy</a></li>
-    
-    <h4>Rachael Driediger</h4>
-    <h4>Email: rdrie1@ocdsb.ca</h4>
-    <h4>School: A.Y. Jackson S.S.</h4>
     
   </body>
 </html>
