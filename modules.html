@@ -3,7 +3,7 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<!--     <link rel="stylesheet" type="text/css" href="style.css"> -->
     <meta charset="utf-8" />
     
     <style>
@@ -14,57 +14,59 @@
         font-size: 50px;
         text-align: center;
         text-decoration: underline;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
       }
       h2{
-        font-family: courier;
+        font-family: cursive;
         font-size: 30px;
       }
       #KhanAcademy{
         font-family: monospace;
         font-size: 15px;
-        background-color: rgb(144, 212, 178);
-        margin-left: 3px;
-        margin-right: 3px;
-        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       #Hackathon{
         font-family: monospace;
         font-size: 15px;
-        background-color: rgb(132, 125, 196);
         width: 100%;
       }
       #CodingChallenge{
         font-family: monospace;
         font-size: 15px;
-        background-color: rgb(144, 127, 148);
         width: 100%
       }
       #GitHub{
         font-family: monospace;
         font-size: 15px;
-        background-color: rgb(125, 187, 196);
         width: 100%
       }
       #CodingSession{
         font-family: monospace;
         font-size: 15px;
-        background-color: rgb(207, 80, 108);
         width: 100%
       }
       #subtitle{
         font-size: 20px;
       }
       
+      #TopHeader{
+        background-color: rgb(174, 100, 210);
+        background-repeat: no-repeat;
+        background-size: auto;
+        margin: 20px;  
+      }
+      
       .Navbar{
         overflow: hidden;
-        background-color: #333;
+        background-color: #F0F0F0;
+        margin: 20px;
       }
       
       .Navbar a{
         float: left;
         font-size: 16px;
-        color: white;
+        color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -80,7 +82,7 @@
         font-size: 16px;
         border: none;
         outline: none;
-        color: white;
+        color: black;
         padding: 14px 16px;
         background-color: inherit;
         font-family: inherit;
@@ -88,7 +90,7 @@
       }
       
       .Navbar a:hover, .Dropdown:hover .Button {
-        background-color: red;
+        background-color: #E0E0E0;
       }      
       
 /*       style the dropdown options */
@@ -110,11 +112,29 @@
       }
       
       .ModeSelect a:hover {
-        background-color: green;
+        background-color: red;
       }
       
       .Dropdown:hover .ModSelect {
         display: block;
+      }
+      
+      #Content{
+        background-color: #E0E0E0;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      
+      body{
+        margin: 0;
+        padding: 0;
+        background-image: url("img_background.jpeg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
       
     </style>
@@ -124,55 +144,53 @@
   </head>
   <body>
   
-    
-    <h1>Modules</h1>
-    
-    <!--     Dropdown menu to choose module -->
-    <div class="Navbar">
-      <a href="index.html">Home</a>
-      <div class="Dropdown">
-        <button class="Button">Modules</button>
-        <div class="ModSelect">
-          <a href="#KhanAcademy">Khan Academy</a>
-          <a href="#CodingChallenge">Coding Challenge</a>
-          <a href="#GitHub">GitHub Courses</a>
-          <a href="#CodingSession">Coding Session</a>
-        </div>
-      </div>
-      <a href="about.html">About</a>
-      <a href="contact.html">Social Media/Contact</a>
-    </div>
-    
-    
-    <div id="KhanAcademy">
-    <h2>Khan Academy Modules</h2>
-    <p>Using Khan Academy, I was able to complete the following modules:</p>
-      <h3 id="subtitle">Intro to HTML/CSS</h3>
-      <h3 id="subtitle">Intro to JS</h3>
-      <h3 id="subtitle">Advanced Games and Visualization</h3>
-      <h3 id="subtitle">Natural Simulations</h3>
-      <h3 id="subtitle">Computer Science Principles: Programming</h3>
-      <h3 id="subtitle">Intro to SQL: Querying and Managing Data</h3> 
-    </div>
-    
-    <div id="Hackathon">
-      <h2>Hackathon</h2>
-    </div>
-    
-    <div id="CodingChallenge">
-      <h2>Coding Challenge</h2>
-    </div>
-    
-    <div id="GitHub">
-      <h2>GitHub Courses and Git Branching</h2>
-    </div>
+      <h1>Modules</h1>
 
-    <div id="CodingSession">
-      <h2>Creative Coding Session</h2>
-    </div>
+    <div id="Content">
+      <!--     Dropdown menu to choose module -->
+      <div class="Navbar">
+        <a href="index.html">Home</a>
+        <div class="Dropdown">
+          <button class="Button">Modules</button>
+          <div class="ModSelect">
+            <a href="#KhanAcademy">Khan Academy</a>
+            <a href="#CodingChallenge">Coding Challenge</a>
+            <a href="#GitHub">GitHub Courses</a>
+            <a href="#CodingSession">Coding Session</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Social Media/Contact</a>
+      </div>
     
-    <div id="About/Contact">
-      <h2>About</h2>
+    
+      <div id="KhanAcademy">
+      <h2>Khan Academy Modules</h2>
+      <p>Using Khan Academy, I was able to complete the following modules:</p>
+        <h3 id="subtitle">Intro to HTML/CSS</h3>
+        <h3 id="subtitle">Intro to JS</h3>
+        <h3 id="subtitle">Advanced Games and Visualization</h3>
+        <h3 id="subtitle">Natural Simulations</h3>
+        <h3 id="subtitle">Computer Science Principles: Programming</h3>
+        <h3 id="subtitle">Intro to SQL: Querying and Managing Data</h3> 
+      </div>
+
+      <div id="Hackathon">
+        <h2>Hackathon</h2>
+      </div>
+
+      <div id="CodingChallenge">
+        <h2>Coding Challenge</h2>
+      </div>
+
+      <div id="GitHub">
+        <h2>GitHub Courses and Git Branching</h2>
+      </div>
+
+      <div id="CodingSession">
+        <h2>Creative Coding Session</h2>
+      </div>
+      
     </div>
     
   </body>
